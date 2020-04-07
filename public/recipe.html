@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recipe</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap&family=Karla:400,700|Rubik:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="bg-image">
+    <header class="py-3 mb-3">
+      <div
+        class="flex-row justify-space-between align-center container-fluid mx-auto"
+      >
+        <h1 class="text-light bg-dark p-4 logo round-25-80">Pizza Hunt</h1>
+        <h3 class="text-light bg-dark p-3 round-25-80">
+          Create your own recipe
+        </h3>
+      </div>
+    </header>
+
+    <main class="container-fluid flex-row mx-auto ">  
+      <div class="container-fluid mx-auto">
+        <section class="p-3 my-4 bg-dark round-25-80">
+          <h2 class="text-light">Create new pizza recipes that will dazzle your taste buds</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat sint ab ut blanditiis assumenda, culpa
+            alias perspiciatis, at quasi minus. Repellendus magni accusamus aliquam sunt culpa ex enim natus.</p>
+        </section>
+      </div>
+
+      <section class="bg-dark p-3 col-12 col-lg-6 round-25-80">
+        <h2 class="text-light ">Let's start our masterpiece</h2>
+        <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+          <h3 class="text-light">Choose your toppings</h3>
+          <div class="form-container">
+            <form id="recipe-form" class="flex-row ">
+              <div class="col-lg-3">
+                <div>
+                  <input type="checkbox" id="pepperoni" name="pepperoni"
+                    checked>
+                  <label for="pepperoni">Pepperoni</label>
+                </div>
+            
+                <div>
+                  <input type="checkbox" id="sausage" name="sausage">
+                  <label for="sausage">Sausage</label>
+                </div>
+                
+                <div>
+                  <input type="checkbox" id="green-peppers" name="green-peppers">
+                  <label for="green-peppers">Green peppers</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="onions" name="onions">
+                  <label for="onions">Onions</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="bacon" name="bacon">
+                  <label for="bacon">Bacon</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="basil" name="basil">
+                  <label for="basil">Basil</label>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div>
+                  <input type="checkbox" id="mushrooms" name="mushrooms">
+                  <label for="mushrooms">Extra cheese</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="pineapple" name="pineapple">
+                  <label for="pineapple">Pineapple</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="ham" name="ham">
+                  <label for="ham">Ham</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="garlic" name="garlic">
+                  <label for="garlic">Garlic</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="tomatoes" name="tomatoes">
+                  <label for="tomatoes">Tomatoes</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="anchovies" name="anchovies">
+                  <label for="anchovies">Anchovies</label>
+                </div>
+              </div>
+              
+              <div class="col-lg-3">
+                <div>
+                  <input type="checkbox" id="mushrooms" name="mushrooms">
+                  <label for="mushrooms">Mushrooms</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="olives" name="olives">
+                  <label for="olives">Olives</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="beef" name="beef">
+                  <label for="beef">Beef</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="pesto" name="pesto">
+                  <label for="pesto">Pesto</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="squash" name="squash">
+                  <label for="squash">Squash</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="eggplant" name="eggplant">
+                  <label for="eggplant">Eggplant</label>
+                </div>
+              </div>
+              <div id="topping" class="col-lg-3"></div>
+              <button class="btn w-100 m-auto mt-3">Submit Recipe</button>
+            </form>
+          </div>
+      </section>
+
+      <section class="bg-dark p-3 col-12 col-lg-6 m-auto round-25-80 min-60-vh">
+        <h2 class="text-light ">Add your own topping</h2>
+        <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+          <form id="topping-form">
+            <label for="topping" class="form-label">Topping</label>
+            <input
+              type="text"
+              id="add-topping"
+              name="topping"
+              class="form-input"
+              placeholder="Add Topping"
+            />
+            <button class="btn">Add Topping</button>
+          </form>
+      </section>
+
+<!-- buttons for GET route queries -->
+
+      <section class="bg-dark p-3 col-12 p-4 col-lg-9 m-auto mt-2 round-25-80">
+        <h4 class="text-light">View our favorites</h4></br>
+  
+
+      <div class="flex-row justify-space-between">
+        <button id="vegetarian" class="btn w-22 p-1 m-1 ">Vegetarian</button>
+        <button id="paleo" class="btn w-22 p-1 m-1 ">Paleo</button>
+        <button id="keto" class="btn w-22 p-1 m-1 ">Keto</button>
+        <button id="vegan" class="btn w-22 p-1 m-1 ">Vegan</button>
+      </div>
+
+        <div class="flex-row justify-space-between" id="display-area">
+        </div>
+      </div>
+    </section>
+
+
+    </div>
+    </main>
+    <script src="./assets/js/recipe.js"></script>
+  </body>
+</html>
